@@ -1,0 +1,40 @@
+Compiling Guide for ShutdownManager
+
+Author: Greg Stewart
+Copyright 2014 Greg Stewart
+
+So you want to compile my program....
+
+Windows:
+
+	Import to your favorite c++ code developer suite (I use Visual Studio
+		Express 2013)
+	
+	Compile
+	
+	Done!
+	
+Linux/Unix:
+
+	Slightly more complicated, as typically you will be compiling by command
+		line, without a fancy IDE to do things for you.
+		
+	MUST HAVE A COMPILER INSTALLED
+	
+	I used g++, a very common compiler
+	Examples are using g++
+	
+	TLDR:	(quick and easy, outputs to a.out)
+	
+		g++ -pthread -std=c++11 ShutdownManager.cpp
+	
+		-pthread	to link the thread libraries
+		-std=c++11	to tell it that this is c++v2011 standard
+	
+	To Specify output:
+	
+		g++ -pthread -std=c++11 ShutdownManager.cpp -o OUTPUT.FILE
+		
+		-pthread	to link the thread libraries
+		-std=c++11	to tell it that this is c++v2011 standard
+		OUTPUT.FILE	whatever file you want to output to
